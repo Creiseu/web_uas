@@ -117,19 +117,19 @@ nav {
 		margin: 0 !important;
 	}
 
-	.button, .button2 {
+	.tombol, .tombol2 {
 		
 		/* margin-bottom: 0.5em !important; */
 	}
 
-		/* #anjay .button.icon:before {
+		/* #anjay .tombol.icon:before {
 			position: absolute;
 			right: 0.15em;
 			top: 50%;
 			margin-top: -0.5em;
 		} */
 
-		/* #anjay .button.button2 {
+		/* #anjay .tombol.tombol2 {
 			margin-bottom: 0;
 		} */
 
@@ -261,9 +261,9 @@ h1 a{
 	width: 100% !important;
 }
 
-/* Button */
+/* tombol */
 
-.button {
+.tombol {
 	position: relative !important;
 	display: inline-block !important;
 	background: #0090c5 !important;
@@ -281,7 +281,7 @@ h1 a{
 	/* font-size: 1.35em; */
 	/* padding: 0.6em 1.5em; */
 }
-.button2{
+.tombol2{
 	position: relative !important;
 	display: inline-block !important;
 	background: #0090c5 !important;
@@ -293,16 +293,16 @@ h1 a{
 	width: 100% !important;
 	font-size: 2.80em;
 }
-.button:hover {
+.tombol:hover {
 	background: #10a0d5 !important;
 }
-.button2 {
+.tombol2 {
 		background: #f1f1f1 !important;
 		background: rgba(0, 0, 0, 0.05) !important;
 		color: #444 !important;
 		text-align: center;
 	}
-.button2:hover {
+.tombol2:hover {
 		background: #e8e8e8 !important;
 		background: rgba(0, 0, 0, 0.085) !important;
 	}
