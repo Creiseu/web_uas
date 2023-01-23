@@ -7,9 +7,9 @@
 html {
 	box-sizing: border-box !important;
 }
-.navbare{
+/* .navbare{
 	padding: 3em 0 1em 0 !important;
-}
+} */
 header {
 	margin: 0 0 2em 0 !important;
 }
@@ -45,12 +45,12 @@ header p {
 #header {
 	position: relative !important;
 }
-nav {
+/* nav {
 	position: absolute !important;
 	right: 0 !important;
 	top: 0 !important;
 	font-size: 16px !important;
-}
+} */
 .nav ul {
 	list-style: none !important;
 	padding-left: 0 !important;
@@ -83,12 +83,15 @@ nav {
 	border-radius: 6px !important;
 	font-family: serif !important;
 	/* font-weight: 400; */
-	padding: 0.25em 0.2em 0.25em 0.2em !important;
-	font-size: 2.64em !important;
+	padding: 0.25em 0.2em 0.2em 0em !important;
+	font-size: 2.44em !important;
 	/* letter-spacing: 0.05em; */
 	display: inline-block !important;
 	vertical-align: bottom !important;
 }	
+#logo{
+	margin-right: 103px;
+}
 #logo h1:hover{
 	text-decoration: underline;
 }
@@ -103,6 +106,7 @@ nav {
 	position: relative;
 	padding: 4.5em !important;
 	padding-top: 2em !important;
+	margin-top: 15px !important;
 }
 
 	#anjay h2 {
@@ -173,46 +177,24 @@ h1 a{
 		border-radius: 8px !important;
 	}
 
-	.image.fit {
-		display: block !important;
-		width: 100% !important;
-	}
-
-	
-
-	.image.left {
-		float: left !important;
-		margin: 0 2em 2em 0 !important;
-	}
-
-	.image.centered {
-		display: block !important;
-		margin: 0 0 2.5em 0 !important;
-	}
-
-		.image.centered img {
-			margin: 0 auto !important;
-			width: auto !important;
-		}
-
 /* Box */
 
 .box {
 	background: #fff !important;
 	border-radius: 6px !important;
-	box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.05) !important;
-	padding: 2em !important;
+	/* box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.05) !important; */
+	padding: 30px !important;
 }
-.feature {
-	padding: 0 !important;
+.box {
+	/* padding: 0 !important; */
 }
 .inner {
 	padding: 0em 2em 3em 2em !important;
 }
-.feature h2 {
+.box h2 {
 	font-size: 1.35em !important;
 }
-.feature p {
+.box p {
 	margin: 0 !important;
 }
 .image {
@@ -235,19 +217,16 @@ h1 a{
 	/* .baris  * {
 		box-sizing: border-box;
 	} */
-	.item1 {
+	/* .item1 {
 		width: 58.33333% !important;
 	}
 	.item2 {
 		width: 41.66667% !important;
-	}
+	} */
 	.item3 {
 		width: 33.33333% !important;
 	}
-	
-	.baris > .col-12 {
-		width: 100% !important;
-	}
+
 	.baris {
 		margin-top: -40px !important;
 		margin-left: -40px !important;
@@ -310,7 +289,7 @@ h1 a{
 	margin-top: 0px !important;
 	margin-bottom: 0px !important;
 	text-align: right !important;
-	margin-right: 80px !important;
+	margin-right: 130px !important;
 	font-weight: 800 !important;
 	font-size: 13pt !important;
 	line-height: 2.25em !important;

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Sign Up</title>
+    <link rel="stylesheet" href="assets/main.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+</head>
+<body id="time">
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid" style="margin-top: 28px;">
+              <a class="navbar-brand" href="#">
+                <div id="logo">
+                    <h1><a href="index.html">Komiku</a></h1>
+                    <span>by Creiseu</span>
+                </div>
+              </a>
+             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <form class="d-flex" role="search">
+                    <div class="nav navbar">
+                        <ul>
+                            <li class="current"><a href="index.html">Welcome</a></li>
+                            <li><a href="#">Dropdown</a></li>
+                            <li><a href="left-sidebar.html">Left Sidebar</a></li>
+                            <li><a href="right-sidebar.html">Right Sidebar</a></li>
+                            <li><a href="no-sidebar.html">No Sidebar</a></li>
+                        </ul>
+                    </div>
+                </form>
+              </div>
+        </div>
+    </nav>
+    <hr>
+    <div class="container-fluid">
+        <form action="#" method="get">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <h5>Nama :</h5>              
+                        </div>
+                        <div class="col">
+                            <div class="input-group input-group-sm mb-3">
+                                <input id="nama" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="Kode Menu">
+                            </div>                          
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <h5>Gender :</h5>              
+                        </div>
+                        <div class="col">
+                            <div class="input-group input-group-sm mb-3">
+                                <div class="input-group input-group-sm mb-3">
+                                    <select id="jk" class="form-select" aria-label="Default select example">
+                                        <option selected>---Silahkan Pilih---</option>
+                                        <option >Laki-Laki</option>
+                                        <option >Wanita</option>
+                                        <!-- <option >Es Teh</option> -->
+                                    </select>
+                                </div>
+                            </div>                          
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <h5>Alamat :</h5>              
+                        </div>
+                        <div class="col">
+                            <div class="input-group input-group-sm mb-3">
+                                <textarea name="" id="alamat" cols="30" rows="0" minlength="30" required onsubmit="checktextarea()"></textarea>
+                            </div>                          
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <h5>Tanggal Lahir :</h5>              
+                        </div>
+                        <div class="col">
+                            <div class="input-group input-group-sm mb-3">
+                                <input id="tl" type="date" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="Jumlah Beli">
+                            </div>                          
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <h5>Tempat Lahir :</h5>              
+                        </div>
+                        <div class="col-sm-9" id="tempat">
+                            <!-- <div class="input-group input-group-sm mb-3">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="tn" value="option1">
+                                    <label  class="form-check-label" for="exampleRadios1">
+                                      Tunai
+                                    </label>
+                                </div>
+                                <div class="form-check" style="margin-left: 25px;">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="ntn" value="option1">
+                                    <label  class="form-check-label" for="exampleRadios1">
+                                      Non Tunai
+                                    </label>
+                                </div>
+                            </div>               -->
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <h5>Messages</h5>              
+                        </div>
+                        <div class="col">
+                            <div class="input-group input-group-sm mb-3">
+                                <input id="harga" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" readonly disabled>
+                            </div>                          
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-3"></div>
+                        <div class="col">
+                            <div class="d-grid gap-2">
+                                <button id="btn" onclick="asd(1)" class="btn btn-primary btn btn-dark" type="submit">Order</button>
+                                <button id="btn" onclick="asd(0)" class="btn btn-primary btn btn-dark" type="submit">Reset</button>
+                            </div>                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <form id="asd" action="">
+        <div class="col-sm-6" id="">
+            <div class="col">
+                <div class="row">
+                    <div class="col-sm-2">
+                        <h3 style="font-family: Helvetica;"><b>Invoice:</b></h3>
+                    </div>
+                    <div class="col-sm-5">
+                        <input id="kode" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" readonly disabled>                          
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <table>
+                <tr>
+                    <table class="table table-borderless w-50 p-3">
+                            <tbody>
+                                <tr>
+                                    <th scope="row"><b>Nama :</b></th>
+                                    <td id="data1"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><b>Jenis Kelamin :</b></th>
+                                    <td id="data2"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><b>Alamat :</b></th>
+                                    <td id="data3"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><b>Tanggal Lahir :</b></th>
+                                    <td id="data4"></td>
+                                </tr>
+                                <!-- <tr>
+                                    <th scope="row"><b>Diskon :</b></th>
+                                    <td id="data5"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><b>Total Bayar :</b></th>
+                                    <td id="data6"></td>
+                                </tr> -->
+                                <tr>
+                                    <th scope="row"><b>Tempat Lahir :</b></th>
+                                    <td id="data7"></td>
+                                </tr>
+                            </tbody>
+                      </table>
+                </tr>
+            </table>
+        </div>
+    </form>
+      
+    <script type="text/javascript">
+      
+        window.onload = function() {
+      
+          document.getElementById("asd").style.display = "none";
+      
+        };
+      
+        function asd(a) {
+        
+          if (a == 1) {
+            document.getElementById("asd").style.display = "block";
+          } else {
+            document.getElementById("asd").style.display = "none";
+          }
+            
+        }
+      </script>
+    <script src="assets/kasir(1).js"></script>
+</body>
+</html>
