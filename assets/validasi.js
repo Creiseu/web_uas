@@ -1,7 +1,7 @@
 // Sign In
 function ceklogin() {
-    const username = "Dzaky";
-    const password = "Dzaky";
+    const username = "Daud";
+    const password = "Daud";
 
     let user = document.getElementById("user").value;
     let pass = document.getElementById("pass").value;
